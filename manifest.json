@@ -1,0 +1,21 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Comic Sans for Chinese",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Set the Comic Sans as the default English font,meanwhile set
+  the Microsoft Yahei as the default Chinese font.",
+  "icons": {
+    "16": "c-16.png",
+    "48": "c-48.png",
+    "128": "c-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["c.css"]
+    }
+  ],
+  "homepage_url": "http://twitter.com/GoogleWebTeam"
+}
+
